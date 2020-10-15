@@ -16,7 +16,7 @@
     引入jar包，这个包是个人的，可以根据个人喜爱，随意操作，放在maven私有仓库中
 
         <dependency>
-            <groupId>com.ninebot.apr</groupId>
+            <groupId>com.xxxx.apr</groupId>
             <artifactId>logger</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

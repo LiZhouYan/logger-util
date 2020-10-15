@@ -7,11 +7,11 @@
 * [深入理解Logger日志——日志等级动态调整](https://www.cnblogs.com/zhouguanglin/p/13809806.html)
 
 
-　　### 项目结构图：
-  
-  ![Image text](https://img2020.cnblogs.com/blog/1190778/202010/1190778-20201014171934548-893888604.png)
+### 项目结构图：
+
+![Image text](https://img2020.cnblogs.com/blog/1190778/202010/1190778-20201014171934548-893888604.png)
     
-   ### 具体使用方式
+### 具体使用方式
     引入jar包，这个包是个人的，可以根据个人喜爱，随意操作，放在maven私有仓库中
 
         <dependency>
@@ -20,9 +20,9 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         
-　　### 测试中调用：
-  
-    ![Image text](https://img2020.cnblogs.com/blog/1190778/202010/1190778-20201014173706426-2098082132.png)
+### 测试中调用：
+
+![Image text](https://img2020.cnblogs.com/blog/1190778/202010/1190778-20201014173706426-2098082132.png)
  
 
 

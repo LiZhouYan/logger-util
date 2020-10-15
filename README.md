@@ -1,6 +1,11 @@
 # logger-util
-## 日志工具：日志等级调整等
+## 日志工具：日志等级调整、不同框架适配等
   我个人参考对美团的日志调整项目做了相应的调整，适应自己的当前情况，在下一个文章做具体的介绍。
+  
+  目前得框架适配：
+  * Slf4j
+  * Slf4j2
+  * Logback
 ## 相关日志学习文章：
 * [深入理解Logger日志——简介](https://www.cnblogs.com/zhouguanglin/p/13803918.html)
 * [深入理解Logger日志——框架绑定原理](https://www.cnblogs.com/zhouguanglin/p/13804013.html)

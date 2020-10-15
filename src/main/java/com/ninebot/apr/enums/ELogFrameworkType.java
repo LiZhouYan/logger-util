@@ -10,7 +10,7 @@ import java.util.Objects;
  * @version 1.0
  * @Desc    日志框架类型
  * @Author zhouguanglin
- * @Email guanglin.zhou@ninebot.com
+ * @Email zhouguanglin_java@163.com
  * @Date 2020/9/28 2:49 下午
  */
 public enum ELogFrameworkType {

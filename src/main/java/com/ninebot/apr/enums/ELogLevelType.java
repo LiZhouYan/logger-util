@@ -4,7 +4,7 @@ package com.ninebot.apr.enums;
  * @version 3.0
  * @Desc    日志等级类型
  * @Author zhouguanglin
- * @Email guanglin.zhou@ninebot.com
+ * @Email zhouguanglin_java@163.com
  * @Date 2020/9/28 3:01 下午
  */
 public enum ELogLevelType {

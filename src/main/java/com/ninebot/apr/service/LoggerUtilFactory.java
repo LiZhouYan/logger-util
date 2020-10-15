@@ -9,7 +9,7 @@ import org.slf4j.impl.StaticLoggerBinder;
  * @version 1.0
  * @Desc 日志工具工厂
  * @Author zhouguanglin
- * @Email guanglin.zhou@ninebot.com
+ * @Email zhouguanglin_java@163.com
  * @Date 2020/9/28 4:59 下午
  */
 public class LoggerUtilFactory {

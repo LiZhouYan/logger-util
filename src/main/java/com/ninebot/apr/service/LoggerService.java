@@ -8,7 +8,7 @@ import java.util.List;
  * @version 1.0
  * @Desc
  * @Author zhouguanglin
- * @Email guanglin.zhou@ninebot.com
+ * @Email zhouguanglin_java@163.com
  * @Date 2020/9/28 2:27 下午
  */
 public interface LoggerService {

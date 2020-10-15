@@ -16,7 +16,7 @@ import java.util.Set;
  * @version 3.0
  * @Desc Log4j日志类型
  * @Author zhouguanglin
- * @Email guanglin.zhou@ninebot.com
+ * @Email zhouguanglin_java@163.com
  * @Date 2020/9/28 2:54 下午
  */
 public class Log4jLoggerServiceImpl extends AbstractLoggerService {

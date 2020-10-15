@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @version 1.0
  * @Desc    日志服务抽象类
  * @Author zhouguanglin
- * @Email guanglin.zhou@ninebot.com
+ * @Email zhouguanglin_java@163.com
  * @Date 2020/9/28 2:34 下午
  */
 public abstract class AbstractLoggerService implements LoggerService {

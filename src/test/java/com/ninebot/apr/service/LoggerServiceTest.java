@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
  * @version 1.0
  * @Desc    日志服务测试
  * @Author zhouguanglin
- * @Email guanglin.zhou@ninebot.com
+ * @Email zhouguanglin_java@163.com
  * @Date 2020/9/29 10:22 上午
  */
 public class LoggerServiceTest {

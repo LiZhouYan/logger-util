@@ -15,7 +15,7 @@ import java.util.Set;
  * @version 1.0
  * @Desc Logback日志服务
  * @Author zhouguanglin
- * @Email guanglin.zhou@ninebot.com
+ * @Email zhouguanglin_java@163.com
  * @Date 2020/9/28 3:18 下午
  */
 public class LogbackLoggerServiceImpl extends AbstractLoggerService {

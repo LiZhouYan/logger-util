@@ -1,9 +1,9 @@
-package com.ninebot.apr.service;
+package com.logger.util.service;
 
-import com.ninebot.apr.bean.LoggerLevel;
-import com.ninebot.apr.constant.LogConstant;
-import com.ninebot.apr.constant.LogLevelConstant;
-import com.ninebot.apr.enums.ELogFrameworkType;
+import com.logger.util.bean.LoggerLevel;
+import com.logger.util.constant.LogConstant;
+import com.logger.util.constant.LogLevelConstant;
+import com.logger.util.enums.ELogFrameworkType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

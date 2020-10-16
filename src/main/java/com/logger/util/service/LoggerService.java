@@ -1,6 +1,6 @@
-package com.ninebot.apr.service;
+package com.logger.util.service;
 
-import com.ninebot.apr.bean.LoggerLevel;
+import com.logger.util.bean.LoggerLevel;
 
 import java.util.List;
 

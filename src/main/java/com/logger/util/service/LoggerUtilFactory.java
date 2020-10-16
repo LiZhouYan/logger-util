@@ -1,6 +1,6 @@
-package com.ninebot.apr.service;
+package com.logger.util.service;
 
-import com.ninebot.apr.enums.ELogFrameworkType;
+import com.logger.util.enums.ELogFrameworkType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.impl.StaticLoggerBinder;

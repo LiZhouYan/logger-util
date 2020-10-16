@@ -1,8 +1,8 @@
-package com.ninebot.apr.enums;
+package com.logger.util.enums;
 
-import com.ninebot.apr.service.impl.Log4j2LoggerServiceImpl;
-import com.ninebot.apr.service.impl.Log4jLoggerServiceImpl;
-import com.ninebot.apr.service.impl.LogbackLoggerServiceImpl;
+import com.logger.util.service.impl.Log4j2LoggerServiceImpl;
+import com.logger.util.service.impl.Log4jLoggerServiceImpl;
+import com.logger.util.service.impl.LogbackLoggerServiceImpl;
 
 import java.util.Objects;
 

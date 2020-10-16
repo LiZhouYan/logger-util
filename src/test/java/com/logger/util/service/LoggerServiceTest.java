@@ -1,7 +1,7 @@
-package com.ninebot.apr.service;
+package com.logger.util.service;
 
-import com.ninebot.apr.bean.LoggerLevel;
-import com.ninebot.apr.constant.LogLevelConstant;
+import com.logger.util.bean.LoggerLevel;
+import com.logger.util.constant.LogLevelConstant;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

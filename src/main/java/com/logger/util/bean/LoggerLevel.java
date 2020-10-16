@@ -1,4 +1,4 @@
-package com.ninebot.apr.bean;
+package com.logger.util.bean;
 
 /**
  * @version 1.0

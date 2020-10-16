@@ -1,42 +1,41 @@
-package com.ninebot.apr.service.impl;
+package com.logger.util.service.impl;
 
-import com.ninebot.apr.bean.LoggerLevel;
-import com.ninebot.apr.constant.LogConstant;
-import com.ninebot.apr.enums.ELogFrameworkType;
-import com.ninebot.apr.service.AbstractLoggerService;
+import com.logger.util.enums.ELogFrameworkType;
+import com.logger.util.service.AbstractLoggerService;
+import com.logger.util.bean.LoggerLevel;
+import com.logger.util.constant.LogConstant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Enumeration;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 /**
- * @version 3.0
- * @Desc Log4j日志类型
+ * @version 1.0
+ * @Desc Logback日志服务
  * @Author zhouguanglin
  * @Email zhouguanglin_java@163.com
- * @Date 2020/9/28 2:54 下午
+ * @Date 2020/9/28 3:18 下午
  */
-public class Log4jLoggerServiceImpl extends AbstractLoggerService {
-    private Logger log = LoggerFactory.getLogger(Log4jLoggerServiceImpl.class);
+public class LogbackLoggerServiceImpl extends AbstractLoggerService {
+    private Logger log = LoggerFactory.getLogger(LogbackLoggerServiceImpl.class);
+
     /**
      * 初始化日志列表
      */
-    public Log4jLoggerServiceImpl() {
-        eLogFrameworkType = ELogFrameworkType.LOG4J;
-        Enumeration<?> enumeration = org.apache.log4j.LogManager.getCurrentLoggers();
-        while (enumeration.hasMoreElements()) {
-            org.apache.log4j.Logger logger = (org.apache.log4j.Logger) enumeration.nextElement();
+    public LogbackLoggerServiceImpl() {
+        eLogFrameworkType = ELogFrameworkType.LOGBACK;
+        ch.qos.logback.classic.LoggerContext loggerContext = (ch.qos.logback.classic.LoggerContext) LoggerFactory.getILoggerFactory();
+        for (ch.qos.logback.classic.Logger logger : loggerContext.getLoggerList()) {
             //若无等级则设置默认 info
             if (logger.getLevel() == null) {
-                org.apache.log4j.Level targetLevel = org.apache.log4j.Level.toLevel(defaultLevel);
+                ch.qos.logback.classic.Level targetLevel = ch.qos.logback.classic.Level.toLevel(defaultLevel);
                 logger.setLevel(targetLevel);
             }
             loggerMap.put(logger.getName(), logger);
         }
-        org.apache.log4j.Logger rootLogger = org.apache.log4j.LogManager.getRootLogger();
+        ch.qos.logback.classic.Logger rootLogger = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME);
         loggerMap.put(rootLogger.getName(), rootLogger);
     }
 
@@ -46,11 +45,12 @@ public class Log4jLoggerServiceImpl extends AbstractLoggerService {
         Set<Map.Entry<String, Object>> entries = loggerMap.entrySet();
         for (Map.Entry<String, Object> entry : entries) {
             Object logger = entry.getValue();
+            // 如果为NULL就是默认等级
             if (null == logger) {
                 throw new RuntimeException(LogConstant.LOGGER_NOT_EXSIT);
             }
-            org.apache.log4j.Logger targetLogger = (org.apache.log4j.Logger) logger;
-            org.apache.log4j.Level targetLevel = org.apache.log4j.Level.toLevel(logLevel);
+            ch.qos.logback.classic.Logger targetLogger = (ch.qos.logback.classic.Logger) logger;
+            ch.qos.logback.classic.Level targetLevel = ch.qos.logback.classic.Level.toLevel(logLevel);
             targetLogger.setLevel(targetLevel);
         }
     }
@@ -64,8 +64,8 @@ public class Log4jLoggerServiceImpl extends AbstractLoggerService {
             if (null == logger) {
                 throw new RuntimeException(LogConstant.LOGGER_NOT_EXSIT);
             }
-            org.apache.log4j.Logger targetLogger = (org.apache.log4j.Logger) logger;
-            org.apache.log4j.Level targetLevel = org.apache.log4j.Level.toLevel(loggerLevel.getLevel());
+            ch.qos.logback.classic.Logger targetLogger = (ch.qos.logback.classic.Logger) logger;
+            ch.qos.logback.classic.Level targetLevel = ch.qos.logback.classic.Level.toLevel(loggerLevel.getLevel());
             targetLogger.setLevel(targetLevel);
         }
         log.info("LoggerService end: loggerLevels = 【{}】", loggerLevels.toString());

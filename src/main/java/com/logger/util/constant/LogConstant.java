@@ -1,4 +1,4 @@
-package com.ninebot.apr.constant;
+package com.logger.util.constant;
 
 /**
  * @version 1.0
